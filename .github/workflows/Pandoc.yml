@@ -17,6 +17,7 @@ on:
     secrets:
       DEFAULTCONTAINER:
         required: true
+        type: string
   # push:
   #   branches: [ master , main ]
   #   paths:
