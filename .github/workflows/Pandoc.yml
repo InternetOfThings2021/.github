@@ -10,10 +10,10 @@ on:
 
     #https://levelup.gitconnected.com/how-to-manually-trigger-a-github-actions-workflow-4712542f1960
     inputs:
-       git-ref:
-         description: SHA (Leave Blank)
-         required: false
-         type: string
+      git-ref:
+        description: SHA (Leave Blank)
+        required: false
+        type: string
     secrets:
       DEFAULTCONTAINER:
         required: true
