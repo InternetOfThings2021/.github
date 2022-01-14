@@ -61,11 +61,11 @@ jobs:
 
     - name: Overlay updated files (if any)
       run: |
-        # Overlay files
+        # Overlay files # source must exist ; destination is optional -f
         cp -vrf Template/* Student/
         cp -vrf Template/.Ossonts/* Student/.Ossonts/
         cp -vrf Template/.github/* Student/.github/
-        cp -vrf Template/.vscode/* Student/.vscode/
+        #cp -vrf Template/.vscode/* Student/.vscode/
         # End overlay
         tree Template/
         tree Student/
