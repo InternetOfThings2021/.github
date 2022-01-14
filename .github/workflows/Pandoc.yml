@@ -14,9 +14,9 @@ on:
         description: SHA (Leave Blank)
         required: false
         type: string
-    secrets:
-      DEFAULTCONTAINER:
-        required: true
+    # secrets:
+    #   DEFAULTCONTAINER:
+    #     required: true
   # push:
   #   branches: [ master , main ]
   #   paths:
