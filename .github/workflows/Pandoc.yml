@@ -36,7 +36,7 @@ jobs:
     #runs-on: ubuntu-20.04
     runs-on: [self-hosted, linux, x64,L2]
     #container: ossonts/setap:latest # Beware of versioning here DOCKERHUB
-    container:  ghcr.io/setap2021/setapdocker # {{ secrets.DEFAULTCONTAINER }}  # Beware of versioning here GITHUB -- Some kind of magic here
+    container:  ${{ secrets.DEFAULTCONTAINER }}  # Beware of versioning here GITHUB -- Some kind of magic here
     #runs-on: [self-hosted, linux, x64]
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
