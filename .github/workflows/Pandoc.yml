@@ -10,13 +10,10 @@ on:
 
     #https://levelup.gitconnected.com/how-to-manually-trigger-a-github-actions-workflow-4712542f1960
     inputs:
-      git-ref:
-        description: SHA (Leave Blank)
-        required: false
-        type: string
-    secrets:
-      DEFAULTCONTAINER:
-        required: true
+       git-ref:
+         description: SHA (Leave Blank)
+         required: false
+         type: string
   # push:
   #   branches: [ master , main ]
   #   paths:
@@ -36,7 +33,7 @@ jobs:
     #runs-on: ubuntu-20.04
     runs-on: [self-hosted, linux, x64,L2]
     #container: ossonts/setap:latest # Beware of versioning here DOCKERHUB
-    container:  ${{ secrets.DEFAULTCONTAINER }}  # Beware of versioning here GITHUB -- Some kind of magic here
+    container: ghcr.io/m30819-2020/setapdocker   # Beware of versioning here GITHUB -- Some kind of magic here
     #runs-on: [self-hosted, linux, x64]
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
