@@ -8,7 +8,7 @@ on: #DO NOT CHANGE
           type: string
       secrets:
         PAT_RO:
-          required: true
+          required: true #token with permission to co the template repo
 
 
 jobs:
