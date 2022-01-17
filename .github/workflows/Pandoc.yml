@@ -50,11 +50,11 @@ jobs:
           echo "Files and order:"
           cat .pandoc.yml
           tree
-          cat  .Ossonts/pandoc.yml
+
 
       - name: Make PDF
         run: |
-          pandoc --defaults=.pandoc.yml --defaults=.Ossonts/pandoc.yml
+          pandoc --defaults=.pandoc.yml
 
                 # Commit auto generated files
       - uses: EndBug/add-and-commit@v7
